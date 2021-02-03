@@ -12,7 +12,6 @@ html {
 }
 
 body {
-    /* font-family: 'Open Sans', Verdana, sans-serif; */
     background: url(./img/bg/noise_transparent.png), 
 	radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), 
     #211F20;
@@ -38,6 +37,7 @@ body {
 
 .button {
     display: inline-block;
+    width: 105px;
     padding: 5px 15px;
     border-radius: 100px;
     color: #F1CDB3;
@@ -98,6 +98,10 @@ li {
     margin-top: 15px;
 }
 
+.step__content img {
+    max-width: 75rem;
+}
+
 code {
     color: aqua;
 }
@@ -136,11 +140,28 @@ code {
         max-width: 45rem;
         font-size: 1.8rem;
     }
+    
+    .step__content img {
+        max-width: 45rem;
+    }
+
+    .header__wrapper {
+        flex-direction: column;
+    }
+
+    .header__title {
+        margin-bottom: 20px;
+    }
+    
 }
 
 @media screen and (max-width: 480px) {
     .wrapper {
         max-width: 35rem;
         font-size: 1.6rem;
+    }
+
+    .step__content img {
+        max-width: 35rem;
     }
 }
