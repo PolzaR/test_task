@@ -12,7 +12,6 @@ html {
 }
 
 body {
-    font-size: 1.6rem;
     /* font-family: 'Open Sans', Verdana, sans-serif; */
     background: url(./img/bg/noise_transparent.png), 
 	radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), 
@@ -24,7 +23,6 @@ body {
     display: flex;
 	margin: 0 auto;
 	max-width: 75rem;
-    justify-content: space-between;
     color: rgb(252, 244, 244);
     line-height: 160%;
     font-size: 2rem;
@@ -34,12 +32,8 @@ body {
 
 .header__wrapper {
     width: 100%;
-    margin-bottom: 30px;
-}
-
-.header {
-    display: flex;
     justify-content: space-between;
+    margin-bottom: 30px;
 }
 
 .button {
