@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тестовое задание</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="wrapper header__wrapper">
+            <h1 class="header__title">Import into a database</h1>
+            <div class="buttons">
+                <a href="index.html" class="button button_active">Русский</a>
+                <a class="button">English</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="wrapper main__wrapper">
+            <nav class="navigation">
+                <h2 class="navigation__title">Шаги:</h2>
+                <ol>
+                    <li class="list__item"><a href="#step1" class="list__link">1. Create a new request</a></li>
+                    <li class="list__item"><a href="#step2" class="list__link">2. Select the method and enter URL</a>
+                    </li>
+                    <li class="list__item"><a href="#step3" class="list__link">3. Fill in the request body</a></li>
+                    <li class="list__item"><a href="#step4" class="list__link">4. Use Pre-request Script</a></li>
+                    <li class="list__item"><a href="#step5" class="list__link">5. Send the request and examine the
+                            response</a></li>
+                </ol>
+            </nav>
+
+
+            <section class="step" id="step1">
+                <h3 class="step__title">1. Create a new request</h3>
+                <div class="step__wrapper">
+                    <p class="step__content">
+                        After we launch Postman, we click the bottom <span class="new">NEW</span>.</p>
+                    <p class="step__content">
+                        <img src="./img/2_start.png" alt="Кнопка NEW находиться в левом верхнем углу" width="750"
+                            height="350">
+                    </p>
+                    <p class="step__content">
+                        Now you see a new window. Select <b><i>Request</i></b>.
+                    </p>
+                    <p class="step__content">
+                        <img src="./img/3_new.png" alt="Созать Request" width="750" height="350">
+                    </p>
+                    <p class="step__content"> Postman asks you give a name to the request. It’s up to you. We just name
+                        it <i>“import_profile”</i>.
+                    </p>
+                    <p class="step__content"> Let’s slide down. There is a field that says <i>Request
+                            Description</i>. Give a
+                        short description of the request. It definitely makes your teammates’ life easier. Otherwise,
+                        just skip it.
+                    </p>
+                    <p class="step__content">
+                        <img src="./img/4_request_name_eng.png" alt="Наименование коллекции" width="450" height="500">
+                    </p>
+                    <p class="step__content"> The last field in this window is <i>Choose Collection</i>. Collections are
+                        created in Postman in case you want to save all your requests as a group for easier access. If
+                        you have not created a suitable collection yet, now is the time to create one.
+                    </p>
+                    <p class="step__content"> Click <i>Create Collection</i>, enter the name of the collection, for
+                        example
+                        “Profiles”. You can also choose a folder where you want to save the request. Then click the
+                        checkmark or just press Enter.
+                    </p>
+                    <p class="step__content"> Click <i>Save to Profiles</i> to create your request. It will be opened in
+                        a
+                        new tab.
+                    </p>
+                    <p class="step__content">
+                        <img src="./img/gif/request_name_collection.gif" alt="Создание коллекции" width="450"
+                            height="530">
+                    </p>
+                    <p class="step__content">Well, we have created a request. Now we need to configure it.
+                    </p>
+                </div>
+            </section>
+
+            <section class="step" id="step2">
+                <h3 class="step__title">2. Select the method and enter URL</h3>
+                <div class="step__wrapper">
+                    <p class="step__content">
+
+                    </p>
+                    <p class="step__content">
+                        Once your new tab is open, you can specify the details you need for your request. By default
+                        Postman will select the <b>GET</b> method for new request. Click the method drop-down to select
+                        a
+                        suitable method. In our case this method is <b>POST</b>.
+                    </p>
+                    <p class="step__content">
+                        <img src="./img/gif/method.gif" alt="Выбор метода POST в выпадающем списке" width="750"
+                            height="400">
+                    </p>
+                    <p class="step__content">
+                        Slide a little to the right - to the central field that says <i>Enter request URL</i>. Each
+                        request
+                        you send in Postman requires a URL representing the API endpoint you are working with. Enter API
+                        URL here. Our URL is <i>https://ru.altkraft.com/api/v1.1/profiles/import</i>.
+                    </p>
+                    <p class="step__content">
+                        <img src="./img/8_post_url.png" alt="Указываем API URL" width="750" height="250">
+                    </p>
+                    <p class="step__content">
+                        Let’s go down to the next panel.
+                    </p>
+                </div>
+            </section>
+
+            <section class="step" id="step3">
+                <h3 class="step__title">3. Fill in the request body</h3>
+                <div class="step__wrapper">
+                    <p class="step__content">
+                        Click <b><i>Body</i></b> tab. You will need to send body data with requests whenever you need to
+                        add or update structured data. However, before doing this, you’d better not forget to select the
+                        type of data.
+                    </p>
+                    <p class="step__content">
+                        <img src="./img/main_panel.png" alt="Главная панель" width="750" height="370">
+                    </p>
+                    <p class="step__content">
+                        The Body tab in Postman allows you to specify the data you need to send with a request. You can
+                        send various different types of body data to suit your API. The type we need now is
+                        <b><i>raw</i></b>.
+                    </p>
+                    <p class="step__content">
+                        By the way, you can choose the form of the request here. Use the raw tab, click the drop-down
+                        list to indicate all possible formats of data. The default format is <i>Text</i>. We need
+                        <b><i>JSON </i></b>. Find it and click.
+                    </p>
+                    <p class="step__content">
+                        <img src="./img/10_raw_json.png" alt="Выбрать формат запроса JSON" width="750" height="300">
+                    </p>
+                    <p class="step__content">
+                        Now let's start filling in the request body.
+                    </p>
+                    <p class="step__content">
+                        Our request body will consist of a JSON object. JSON objects are written as <i>“key: value”</i>
+                        pairs.
+                    </p>
+                    <p class="step__content">
+                        For example, the key <i>"token"</i> and its value <i>"52d6346d1d7144bc98c559c64d5cb6cc"</i> will
+                        be written as: <i>"token": "52d6346d1d7144bc98c559c64d5cb6cc"</i>.
+                    </p>
+                    <p class="step__content">
+                        We need to enter the profile data that we want to import into the database in the same format.
+                    </p>
+                    <p class="step__content">
+                        Don’t forget JSON objects are surrounded by curly braces <b>{ }</b>. So, the body of our request
+                        will look like this:
+                    </p>
+                    <pre><code>
+{
+"token": "52d6346d1d7144bc98c559c64d5cb6cc",
+"db_id": 2,
+"matching": "email",
+"email": "john@example.com",
+"data": {
+        "_fname": "John",
+        "_lname": "Doe",                     
+        "_bdate": ""
+        }
+}                       
+                    </code></pre>
+                    <p class="step__content">
+                        Copy this code and paste it into the body. </p>
+                    <p class="step__content">
+                        <img src="./img/11_body_full.png" alt="Заполнить тело запроса" width="750" height="250">
+                    </p>
+                    <p class="step__content">
+                        Now we enter only a small part of the possible profile data. If you wish to know what else you
+                        can import into the database, just follow the link: <a
+                            href="https://docs.altcraft.com/display/MPUA/Profile+data+object"
+                            class="content__link">Profile</a>.
+                    </p>
+                    <p class="step__content">
+                        If you still have questions, look at the gif below:
+                    </p>
+                    <p class="step__content">
+                        <img src="./img/gif/fill_in_body.gif" alt="Работа с теолом запроса" width="750" height="300">
+                    </p>
+                </div>
+            </section>
+
+            <section class="step" id="step4">
+                <h3 class="step__title">4. Use Pre-request Script</h3>
+                <div class="step__wrapper">
+                    <p class="step__content">
+                        You can use pre-request scripts in Postman to execute JavaScript before a request runs. And now
+                        we need it because we want to set a variable value and use it in the request body. To include
+                        code you want to execute before Postman sends a request, select the <b><i>Pre-request
+                                Script</i></b> tab. It is next to <b><i>Body tab</i></b>.
+                    </p>
+                    <p class="step__content">
+                        <img src="./img/pre-request_script.png" alt="Написание Pre-request script" width="750"
+                            height="400">
+                    </p>
+                    <p class="step__content">
+                        We have an object <i>“data”</i> in the JSON-object. There are three keys in <i>“data”</i>. We
+                        need only one — <i>“_bdate”</i> — because we want to change the value of this key in such a way
+                        that it will calculate the current data minus 20 years.
+                    </p>
+                    <p class="step__content">
+                        That’s why we need to create an environment variable in Pre-request Script. Copy the following
+                        code and paste it into the <b><i>Pre-request Script</i></b> tab.
+                    </p>
+                    <pre>
+                            <code>
+let moment = require('moment');
+let string = moment().format();
+let year = parseInt(string.slice(0, 4)) - 20;
+let currentDateMinusTwentyYears = year + '' + string.slice(4);
+pm.variables.set("_bdate_changed", currentDateMinusTwentyYears);</code>
+                        </pre>
+                    <p class="step__content">
+                        <img src="./img/12_script.png" alt="Написание Pre-request script" width="750" height="280">
+                    </p>
+                    <p class="step__content">
+                        We’ve just created an environment variable <i>“_bdate_changed”</i>. Since that moment every time
+                        the request is sent, that variable will calculate the current date, but 20 years earlier.
+                    </p>
+                    <p class="step__content">
+                        Let’s add this variable to the request body.
+                    </p>
+                    <p class="step__content">
+                        We go back to the <b><i>Body tab</i></b>, find the object <i>“data”</i> and its value
+                        <i>“_bdate”</i>. Now delete the previous value of this key and insert the variable
+                        <i>“_bdate_changed”</i>. In Postman an environment variable is always surrounded by quotes and
+                        curly braces. Like this: <b><i>“{{_bdate_changed}}”</i></b>.
+                    </p>
+                    <p class="step__content">
+                        <img src="./img/gif/variable.gif" alt="Указываем переменную в теле запроса" width="750"
+                            height="400">
+                    </p>
+                    <p class="step__content">
+                        Now before the request is sent, the value of the <i>“_bdate”</i> will be changed depending on
+                        the current date.
+                    </p>
+                </div>
+            </section>
+
+            <section class="step" id="step5">
+                <h3 class="step__title">5. Send the request and Examine the response</h3>
+                <div class="step__wrapper">
+                    <p class="step__content">
+                        We have our request set up. Now go back to the upper panel and click <span
+                            class="send">SEND</span> to send the request.
+                    </p>
+                    <p class="step__content">
+                        <img src="./img/send.png" alt="Получаем ответ запроса" width="750" height="400">
+                    </p>
+                    <p class="step__content">
+                        In the bottom panel you can see the Response received from the API serve. Examine it.
+                    </p>
+                    <p class="step__content">
+                        <img src="./img/response_eng.png" alt="Получаем ответ запроса" width="750" height="400">
+                    </p>
+                    <p>
+                        If the field <i>error_text</i> says <i>Successful operation</i>, then the customer profile has
+                        been successfully imported into the Altkraft Marketing database. Congratulations!
+                    </p>
+                    <p class="step__content">
+                        Otherwise, you have made a mistake somewhere. Please double-check the entered data.
+                    </p>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <button class="button button_active" id="btn_top">Вверх</button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
