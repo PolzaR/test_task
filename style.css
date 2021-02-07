@@ -152,7 +152,10 @@ code {
     .header__title {
         margin-bottom: 20px;
     }
-    
+
+    code {
+        font-size: 1.5rem;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -163,5 +166,9 @@ code {
 
     .step__content img {
         max-width: 35rem;
+    }
+
+    code {
+        font-size: 1rem;
     }
 }

@@ -42,14 +42,13 @@
                     <p class="step__content">
                         After we launch Postman, we click the bottom <span class="new">NEW</span>.</p>
                     <p class="step__content">
-                        <img src="./img/2_start.png" alt="Кнопка NEW находиться в левом верхнем углу" width="750"
-                            height="350">
+                        <img src="./img/2_start.png" alt="Click NEW">
                     </p>
                     <p class="step__content">
                         Now you see a new window. Select <b><i>Request</i></b>.
                     </p>
                     <p class="step__content">
-                        <img src="./img/3_new.png" alt="Созать Request" width="750" height="350">
+                        <img src="./img/3_new.png" alt="Create Request">
                     </p>
                     <p class="step__content"> Postman asks you to give a name to the request. It’s up to you. We just
                         name
@@ -62,7 +61,7 @@
                         just skip it.
                     </p>
                     <p class="step__content">
-                        <img src="./img/4_request_name_eng.png" alt="Наименование коллекции" width="450" height="500">
+                        <img src="./img/4_request_name_eng.png" alt="Name the request">
                     </p>
                     <p class="step__content"> The last field in this window is <i>Choose Collection</i>. Collections are
                         created in Postman in case you want to save all your requests as a group for easier access. If
@@ -78,8 +77,7 @@
                         new tab.
                     </p>
                     <p class="step__content">
-                        <img src="./img/gif/request_name_collection.gif" alt="Создание коллекции" width="450"
-                            height="530">
+                        <img src="./img/gif/request_name_collection.gif" alt="Create a collection">
                     </p>
                     <p class="step__content">Well, we have created a request. Now we need to configure it.
                     </p>
@@ -99,8 +97,7 @@
                         suitable method. In our case this method is <b>POST</b>.
                     </p>
                     <p class="step__content">
-                        <img src="./img/gif/method.gif" alt="Выбор метода POST в выпадающем списке" width="750"
-                            height="400">
+                        <img src="./img/gif/method.gif" alt="Select POST method in the drop-down list">
                     </p>
                     <p class="step__content">
                         Slide a little to the right - to the central field that says <i>Enter request URL</i>. Each
@@ -109,7 +106,7 @@
                         URL here. Our URL is <i>https://ru.altkraft.com/api/v1.1/profiles/import</i>.
                     </p>
                     <p class="step__content">
-                        <img src="./img/8_post_url.png" alt="Указываем API URL" width="750" height="250">
+                        <img src="./img/8_post_url.png" alt="Enter API URL">
                     </p>
                     <p class="step__content">
                         Let’s go down to the next panel.
@@ -126,7 +123,7 @@
                         type of data.
                     </p>
                     <p class="step__content">
-                        <img src="./img/main_panel.png" alt="Главная панель" width="750" height="370">
+                        <img src="./img/main_panel.png" alt="Main panel">
                     </p>
                     <p class="step__content">
                         The Body tab in Postman allows you to specify the data you need to send with a request. You can
@@ -139,7 +136,7 @@
                         <b><i>JSON </i></b>. Find it and click.
                     </p>
                     <p class="step__content">
-                        <img src="./img/10_raw_json.png" alt="Выбрать формат запроса JSON" width="750" height="300">
+                        <img src="./img/10_raw_json.png" alt="Choose the request format - JSON">
                     </p>
                     <p class="step__content">
                         Now let's start filling in the request body.
@@ -150,7 +147,7 @@
                     </p>
                     <p class="step__content">
                         For example, the key <i>"token"</i> and its value <i>"52d6346d1d7144bc98c559c64d5cb6cc"</i> will
-                        be written as: <i>"token": "52d6346d1d7144bc98c559c64d5cb6cc"</i>.
+                        be written as: <br><b><i>"token": "52d6346d1d7144bc98c559c64d5cb6cc"</i></b>.
                     </p>
                     <p class="step__content">
                         We need to enter the profile data that we want to import into the database in the same format.
@@ -175,7 +172,7 @@
                     <p class="step__content">
                         Copy this code and paste it into the body. </p>
                     <p class="step__content">
-                        <img src="./img/11_body_full.png" alt="Заполнить тело запроса" width="750" height="250">
+                        <img src="./img/11_body_full.png" alt="Fill in the request body">
                     </p>
                     <p class="step__content">
                         Now we enter only a small part of the possible profile data. If you wish to know what else you
@@ -187,7 +184,7 @@
                         If you still have questions, look at the gif below:
                     </p>
                     <p class="step__content">
-                        <img src="./img/gif/fill_in_body.gif" alt="Работа с теолом запроса" width="750" height="300">
+                        <img src="./img/gif/fill_in_body.gif" alt="Work with the request body">
                     </p>
                 </div>
             </section>
@@ -202,8 +199,7 @@
                                 Script</i></b> tab. It is next to <b><i>Body tab</i></b>.
                     </p>
                     <p class="step__content">
-                        <img src="./img/pre-request_script.png" alt="Написание Pre-request script" width="750"
-                            height="400">
+                        <img src="./img/pre-request_script.png" alt="Pre-request script tab">
                     </p>
                     <p class="step__content">
                         We have an object <i>“data”</i> in the JSON-object. There are three keys in <i>“data”</i>. We
@@ -211,7 +207,7 @@
                         that it will calculate the current data minus 20 years.
                     </p>
                     <p class="step__content">
-                        <img src="./img/11_body_data.png" alt="Объект 'data'" width="750" height="550">
+                        <img src="./img/11_body_data.png" alt="Object 'data'">
                     </p>
                     <p class="step__content">
                         That’s why we need to create an environment variable in Pre-request Script. Copy the following
@@ -226,7 +222,7 @@ let currentDateMinusTwentyYears = year + '' + string.slice(4);
 pm.variables.set("_bdate_changed", currentDateMinusTwentyYears);</code>
                         </pre>
                     <p class="step__content">
-                        <img src="./img/12_script.png" alt="Написание Pre-request script" width="750" height="280">
+                        <img src="./img/12_script.png" alt="Write Pre-request script">
                     </p>
                     <p class="step__content">
                         We’ve just created an environment variable <i>“_bdate_changed”</i>. Since that moment every time
@@ -242,8 +238,7 @@ pm.variables.set("_bdate_changed", currentDateMinusTwentyYears);</code>
                         curly braces. Like this: <b><i>“{{_bdate_changed}}”</i></b>.
                     </p>
                     <p class="step__content">
-                        <img src="./img/gif/variable.gif" alt="Указываем переменную в теле запроса" width="750"
-                            height="400">
+                        <img src="./img/gif/variable.gif" alt="Specify variable in the body request">
                     </p>
                     <p class="step__content">
                         Now before the request is sent, the value of the <i>“_bdate”</i> will be changed depending on
@@ -260,13 +255,13 @@ pm.variables.set("_bdate_changed", currentDateMinusTwentyYears);</code>
                             class="send">SEND</span> to send the request.
                     </p>
                     <p class="step__content">
-                        <img src="./img/send.png" alt="Получаем ответ запроса" width="750" height="400">
+                        <img src="./img/send.png" alt="Send the request">
                     </p>
                     <p class="step__content">
                         In the bottom panel you can see the Response received from the API serve. Examine it.
                     </p>
                     <p class="step__content">
-                        <img src="./img/response_eng.png" alt="Получаем ответ запроса" width="750" height="400">
+                        <img src="./img/response_eng.png" alt="Get the response">
                     </p>
                     <p>
                         If the field <i>error_text</i> says <i>Successful operation</i>, then the customer profile has
