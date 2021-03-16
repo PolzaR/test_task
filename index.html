@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Тестовое задание</title>
     <link rel="stylesheet" href="style.css">
+    <script src="http://code.jquery.com/jquery-1.8.3.js"></script>
+    
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-messaging.js"></script>
+    
 </head>
 
 <body>
@@ -268,6 +273,21 @@ pm.variables.set("_bdate_changed", currentDateMinusTwentyYears);</code>
     </main>
 
     <button class="button button_active" id="btn_top">Вверх</button>
+    
+    <button id="init_sub">Подписаться на уведомления</button> // Кнопка подписки
+ 
+<script>
+  $("#init_sub").click(function(){ // По клику на кнопку..
+    try {
+        var akPush = new AKPush();
+        akPush.initSubscription() // ..показать форму подписки
+        }
+    catch (e) {
+      console.log(e); // Или записать ошибку в консоль браузера
+              }
+                                  });
+  
+</script>
 
     <script src="script.js"></script>
 </body>
