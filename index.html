@@ -6,12 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Тестовое задание</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-    
-    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-messaging.js"></script>
-    
-    <script src="https://pxl.polina.zakaryan.dev.altkraft.com/ak_container.js?id=MXw2" ></script>
     
 </head>
 
@@ -278,18 +272,6 @@ pm.variables.set("_bdate_changed", currentDateMinusTwentyYears);</code>
     
     <button id="init_sub">Подписаться на уведомления</button> // Кнопка подписки
  
-<script>
-  $("#init_sub").click(function(){ // По клику на кнопку..
-    try {
-        var akPush = new AKPush();
-        akPush.initSubscription() // ..показать форму подписки
-        }
-    catch (e) {
-      console.log(e); // Или записать ошибку в консоль браузера
-              }
-                                  });
-  
-</script>
 
     <script src="script.js"></script>
 </body>
